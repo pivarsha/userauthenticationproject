@@ -1,0 +1,12 @@
+
+<div class="mt-6">
+  <h2 class="text-3xl font-bold text-gray-900">Login</h2>
+  <form method="post" class="mt-6">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="inline-flex items-center px-6 py-3 mt-4 font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-800 transition duration-150 ease-in-out">
+      Login
+    </button>
+  </form>
+</div>
+<a href="{% url 'signup' %}">signup</a>

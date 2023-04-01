@@ -1,0 +1,12 @@
+
+<div class="mt-6">
+  <h2 class="text-3xl font-bold text-gray-900">{{ request.user.email }}   Details</h2>
+  <div class="mt-6">
+    <p class="text-lg font-medium text-gray-900">Email: {{ user.email }}</p>
+    <p class="text-lg font-medium text-gray-900">Nmae: {{ request.user.first_name }}</p>
+    <p class="text-lg font-medium text-gray-900">Last Name: {{ request.user.last_name }}</p>
+    <p class="text-lg font-medium text-gray-900">Mobile: {{ user.mobile }}</p>
+  </div>
+</div>
+
+<a href="{% url 'logout' %}">Logout</a>
